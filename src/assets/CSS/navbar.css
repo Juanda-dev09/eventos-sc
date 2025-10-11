@@ -1,12 +1,14 @@
 @import url(./index.css);
 
 .content__allNavbarPage-eventosSC {
+  position: fixed;
   width: 100%;
   height: fit-content;
   padding: var(--spacing-4) var(--spacing-8);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 
   .bx-logo {
     width: 50px;
@@ -64,7 +66,7 @@
     .contentSearch-and-profile {
       display: flex;
       align-items: center;
-      gap: var(--spacing-6);
+      gap: var(--spacing-3);
 
       .bx-search-input {
         position: relative;

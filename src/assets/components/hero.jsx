@@ -1,5 +1,6 @@
 import { CarouselEventosSC } from "../UI/carousel";
 import { NavbarEventosSC } from "./navbar";
+import "../CSS/hero.css";
 
 export function HeroPage() {
   return (
