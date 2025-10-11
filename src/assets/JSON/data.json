@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "fecha": "12-10 del 2025 / Chía",
+    "titulo": "Festival Nocturno Sabana Beats 2025",
+    "texto": "Vive la experiencia más vibrante de Sabana Centro. Música, luces y cultura reunidas en una sola noche inolvidable.",
+    "img": "public/images/pexels-maumascaro-1154189.jpg"
+  },
+  {
+    "id": 2,
+    "fecha": "28-11 del 2025 / Zipaquirá",
+    "titulo": "Cumbre del Sol 2025",
+    "texto": "Un día lleno de color, arte y ritmos para celebrar la diversidad de la región.",
+    "img": "public/images/pexels-mccutcheon-1209843.jpg"
+  },
+  {
+    "id": 3,
+    "fecha": "05-01 del 2026 / Cajicá",
+    "titulo": "Amanecer Andino",
+    "texto": "Recibe el nuevo año con las melodías más auténticas de nuestras montañas.",
+    "img": "public/images/pexels-anna-panchenko-212558913-11942864.jpg"
+  },
+  {
+    "id": 4,
+    "fecha": "15-02 del 2026 / Tocancipá",
+    "titulo": "Ritmos del Valle 2026",
+    "texto": "Una celebración de la música alternativa y las nuevas bandas emergentes del altiplano.",
+    "img": "public/images/pexels-bigbagfilms-8512701.jpg"
+  }
+]

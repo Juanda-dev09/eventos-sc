@@ -10,5 +10,62 @@
     left: 0;
     width: 100%;
     height: 100%;
+
+    /* Oculta los slides que no están activos */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* === NUEVO: estilos del slide === */
+    .carouselItem {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .carouselItem.active {
+      opacity: 1;
+      transform: translateX(0);
+      position: relative;
+    }
+
+    .carouselItem.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* === CONTROLES (círculos) === */
+    .bx-controlsCarousel {
+      position: absolute;
+      bottom: var(--spacing-4);
+      right: var(--spacing-8);
+
+      display: flex;
+      gap: var(--spacing-2);
+      transition: 0.3s ease-in-out;
+
+      .circleControlCarousel {
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 999px;
+        background-color: var(--colorWhite);
+        z-index: 2;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background: var(--colorPink);
+        }
+      }
+
+      .imageCarouselActive {
+        background: var(--gradient-2);
+        transition: 0.3s ease-in-out;
+      }
+    }
   }
 }

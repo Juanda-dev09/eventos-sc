@@ -4,8 +4,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(public/images/pexels-maumascaro-1154189.jpg) center no-repeat;
-  background-size: cover;
+  background-size: cover !important;
   z-index: 1;
 
   &::before {
@@ -107,36 +106,6 @@
           color: var(--colorPink);
         }
       }
-    }
-  }
-
-  .bx-controlsCarousel {
-    position: absolute;
-    bottom: var(--spacing-4);
-    right: var(--spacing-8);
-
-    display: flex;
-    gap: var(--spacing-2);
-    transition: 0.3s ease-in-out;
-
-    .circleControlCarousel {
-      display: block;
-      width: 18px;
-      height: 18px;
-      border-radius: 999px;
-      background-color: var(--colorWhite);
-      z-index: 2;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
-
-      &:hover {
-        background: var(--colorPink);
-      }
-    }
-
-    .imageCarouselActive {
-      background: var(--gradient-2);
-      transition: 0.3s ease-in-out;
     }
   }
 }
