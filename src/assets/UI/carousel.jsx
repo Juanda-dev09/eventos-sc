@@ -1,25 +1,37 @@
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
+import "../CSS/carousel.css";
+import BlurText from "./blurText";
 
-export function CarouselEventosSC() {
+export function CarouselEventosSC({
+  fecha,
+  ciudad,
+  titleEvent,
+  imageEvent,
+  descriptionEvent,
+  triggerAnimation,
+}) {
   return (
     <>
-      <article className="content__allCarouselPage-eventosSC">
-        <span className="decorationRectangle"></span>
-
+      <article
+        className="content__allCarouselPage-eventosSC"
+        style={{ background: `url(${imageEvent}) center no-repeat` }}
+      >
         <section className="content_introductionEvents">
           <span className="data">
-            <span className="circle"></span> 12-10 del 2025 / Chía
+            <span className="circle"></span> {fecha} / {ciudad}
           </span>
 
-          <h1 className="titleEvent">Festival Nocturno Sabana Beats 2025</h1>
+          <h1 className="titleEvent">{titleEvent}</h1>
 
           <p className="txt">
-            Vive la experiencia más vibrante de Sabana Centro. Música, luces y
-            cultura reunidas en una sola noche inolvidable.
+            <BlurText
+              triggerAnimation={triggerAnimation}
+              text={descriptionEvent}
+            />
           </p>
 
           <section className="bx-CTA-Events">
-            <button className="tickets"></button>
+            <button className="tickets">Entradas</button>
 
             <div className="bx-allEvents">
               <span className="txtAllEvents">Todos los eventos</span>
@@ -29,23 +41,6 @@ export function CarouselEventosSC() {
             </div>
           </section>
         </section>
-
-        <div className="bx-controlsCarousel">
-          <div className="bx-iconArrowLeft">
-            <ChevronLeftIcon />
-          </div>
-
-          <div className="containCircles">
-            <span className="circleControlCarousel imageCarouselActive"></span>
-            <span className="circleControlCarousel"></span>
-            <span className="circleControlCarousel"></span>
-            <span className="circleControlCarousel"></span>
-          </div>
-
-          <div className="bx-iconArrowRight">
-            <ChevronRightIcon />
-          </div>
-        </div>
       </article>
     </>
   );

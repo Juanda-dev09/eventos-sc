@@ -24,6 +24,8 @@
     var(--colorPink) 100%
   );
 
+  --gradient-3: linear-gradient(180deg, #ffb3ef 0%, #e8cdff 100%);
+
   /*Fonts Style*/
   --fontFk2d: "K2D", sans-serif;
   --fontFJura: "Jura", sans-serif;
@@ -62,4 +64,11 @@ body {
   color: var(--colorWhite);
   font-family: var(--fontFJura);
   font-size: var(--fontSize-7);
+}
+
+.txt {
+  width: 42ch;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  font-size: var(--fontSize-4);
 }

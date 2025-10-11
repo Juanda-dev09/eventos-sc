@@ -1,12 +1,14 @@
 @import url(./index.css);
 
 .content__allNavbarPage-eventosSC {
+  position: fixed;
   width: 100%;
   height: fit-content;
   padding: var(--spacing-4) var(--spacing-8);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 
   .bx-logo {
     width: 50px;
@@ -55,7 +57,7 @@
             border: 2px solid var(--colorWhite);
             padding: var(--spacing-2) var(--spacing-6);
             border-radius: 999px;
-            background-color: var(--colorLightPurple);
+            background-color: hsl(263, 14%, 23%, 50%);
           }
         }
       }
@@ -64,7 +66,7 @@
     .contentSearch-and-profile {
       display: flex;
       align-items: center;
-      gap: var(--spacing-6);
+      gap: var(--spacing-3);
 
       .bx-search-input {
         position: relative;
@@ -81,7 +83,6 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          background-color: var(--colorLightPurple);
           transform: translateY(-50%);
           border-radius: 8px 0 0 8px;
         }
@@ -92,7 +93,7 @@
           border-radius: 8px;
           outline: none;
           border: 2px solid var(--colorWhite);
-          background-color: var(--colorLightPurple);
+          background-color: hsl(263, 14%, 23%, 50%);
           color: var(--colorWhite);
           text-indent: 2.3rem;
           font-family: var(--fontFJura);
