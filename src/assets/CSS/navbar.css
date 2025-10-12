@@ -120,6 +120,7 @@
       .bx-notifications {
         cursor: pointer;
         transition: 0.3s ease-in-out;
+        border: 2px solid red;
 
         &:hover {
           transform: scale(1.07);
