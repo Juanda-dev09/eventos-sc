@@ -5,7 +5,7 @@
   width: 45%;
   height: 400px;
   border-radius: var(--spacing-4);
-  background: url(public/images/660af6d9b027c628039048.jpg) center no-repeat;
+  background: url(/images/660af6d9b027c628039048.jpg) center no-repeat;
   background-size: cover;
 
   display: flex;
