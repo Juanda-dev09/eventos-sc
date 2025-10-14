@@ -14,6 +14,7 @@ export function EventsPage() {
           <CardsEvents />
           <CardsEvents />
           <CardsEvents />
+          <CardsEvents />
         </figure>
       </article>
     </>
