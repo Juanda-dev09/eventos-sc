@@ -1,11 +1,11 @@
 @font-face {
   font-family: "K2D";
-  src: url(public/fonts/K2D/K2D-Bold.ttf);
+  src: url(/fonts/K2D/K2D-Bold.ttf);
 }
 
 @font-face {
   font-family: "Jura";
-  src: url(public/fonts/Jura/Jura-VariableFont_wght.ttf);
+  src: url(/fonts/Jura/Jura-VariableFont_wght.ttf);
 }
 
 :root {
@@ -13,31 +13,32 @@
   --dark: #0b0411;
   --darkGrey: #1f1f1f;
   --colorWhite: #dddae2;
-  --colorPurple: #6e428b;
-  --colorPink: #ff54bb;
+  --colorGreen: #a1ffce;
+  --colorYellow: #faffd1;
   --colorLightPurple: #383242;
   --gradient-1: linear-gradient(180deg, var(--darkGrey) 0%, var(--dark) 100%)
     no-repeat;
   --gradient-2: linear-gradient(
     45deg,
-    var(--colorPurple) 0%,
-    var(--colorPink) 100%
+    var(--colorGreen) 0%,
+    var(--colorYellow) 100%
   );
 
-  --gradient-3: linear-gradient(180deg, #ffb3ef 0%, #e8cdff 100%);
+  --gradient-3: linear-gradient(180deg, #8e9eab 0%, #eef2f3 100%);
 
   /*Fonts Style*/
   --fontFk2d: "K2D", sans-serif;
   --fontFJura: "Jura", sans-serif;
 
-  --fontSize-1: 72px;
-  --fontSize-2: 48px;
+  --fontSize-1: 52px;
+  --fontSize-2: 42px;
   --fontSize-3: 32px;
   --fontSize-4: 24px;
   --fontSize-5: 20px;
   --fontSize-6: 18px;
   --fontSize-7: 16px;
   --fontSize-8: 14px;
+  --fontSize-9: 12px;
 
   /*spacing*/
   --spacing-1: 8px;
@@ -70,5 +71,16 @@ body {
   width: 42ch;
   line-height: 1.4;
   letter-spacing: 1px;
-  font-size: var(--fontSize-4);
+  font-size: var(--fontSize-5);
+}
+
+.txtGradients {
+  font-weight: bolder;
+  font-family: var(--fontFk2d);
+  font-size: var(--fontSize-1);
+  background: var(--gradient-3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
