@@ -1,6 +1,8 @@
 import { ChevronRightIcon } from "lucide-react";
 import "../CSS/carousel.css";
 import BlurText from "./blurText";
+import { Button } from "./buttons";
+import "animate.css";
 
 export function CarouselEventosSC({
   fecha,
@@ -21,7 +23,9 @@ export function CarouselEventosSC({
             <span className="circle"></span> {fecha} / {ciudad}
           </span>
 
-          <h1 className="titleEvent">{titleEvent}</h1>
+          <h1 className="titleEvent animate__animated animate__fadeInUp txtGradients">
+            {titleEvent}
+          </h1>
 
           <p className="txt">
             <BlurText
@@ -31,7 +35,12 @@ export function CarouselEventosSC({
           </p>
 
           <section className="bx-CTA-Events">
-            <button className="tickets">Entradas</button>
+            <Button
+              text="Entradas"
+              onClick={() => {}}
+              styleClass="tickets"
+              typeBtn="button"
+            />
 
             <div className="bx-allEvents">
               <span className="txtAllEvents">Todos los eventos</span>

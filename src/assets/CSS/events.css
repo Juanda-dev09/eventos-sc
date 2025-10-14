@@ -1,0 +1,30 @@
+@import url("./index.css");
+
+.content__allEventsPage-eventosSC {
+  padding: var(--spacing-8);
+
+  .introductionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-1);
+    margin-bottom: var(--spacing-8);
+
+    .titleEvents {
+      font-size: var(--fontSize-3);
+      font-family: var(--fontFk2d);
+    }
+    .txt {
+      font-size: var(--fontSize-4);
+    }
+  }
+
+  .content_eventsDestacados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-6);
+  }
+}

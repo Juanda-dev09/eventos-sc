@@ -19,7 +19,7 @@
     width: fit-content;
     height: 66px;
     border: 2px solid var(--colorWhite);
-    background-color: transparent;
+    background-color: hsl(272, 62%, 4%, 25%);
     backdrop-filter: blur(10px);
     border-radius: 999px;
     padding: var(--spacing-1);
@@ -54,10 +54,22 @@
           }
 
           .navbarActive {
-            border: 2px solid var(--colorWhite);
+            position: relative;
             padding: var(--spacing-2) var(--spacing-6);
-            border-radius: 999px;
-            background-color: hsl(263, 14%, 23%, 50%);
+            background-color: hsl(0, 0%, 0%, 50%);
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 108%;
+              height: 120%;
+              background: var(--gradient-2);
+              z-index: -1;
+              border-radius: 999px;
+            }
           }
         }
       }
@@ -108,11 +120,11 @@
           }
 
           &:hover {
-            border-color: var(--colorPink);
+            border-color: var(--colorGreen);
           }
 
           &:focus {
-            border-color: var(--colorPink);
+            border-color: var(--colorGreen);
           }
         }
       }
@@ -120,7 +132,6 @@
       .bx-notifications {
         cursor: pointer;
         transition: 0.3s ease-in-out;
-        border: 2px solid red;
 
         &:hover {
           transform: scale(1.07);

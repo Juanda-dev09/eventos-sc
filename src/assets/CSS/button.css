@@ -1,0 +1,12 @@
+@import url(./index.css);
+
+.stylesForDefault {
+  border: none;
+  border-radius: 999px;
+  font-size: var(--fontSize-6);
+  font-family: var(--fontFJura);
+  color: var(--dark);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
