@@ -1,14 +1,13 @@
 @import url("./index.css");
 
 .content__allEventsPage-eventosSC {
-  padding: var(--spacing-8);
-
   .introductionSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: var(--spacing-1);
+    margin-top: var(--spacing-8);
     margin-bottom: var(--spacing-8);
 
     .titleEvents {
