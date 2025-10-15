@@ -16,6 +16,13 @@ export function EventsPage() {
           <CardsEvents />
           <CardsEvents />
         </figure>
+
+        <section className="introductionSection">
+          <h2 className="titleEvents txtGradients">Próximos Eventos</h2>
+          <p className="txt">No te pierdas estas experiencias cercanas</p>
+        </section>
+
+        <figure className="content_eventsProximos"></figure>
       </article>
     </>
   );
