@@ -37,7 +37,7 @@
 
     .bx-controlsCarousel {
       position: absolute;
-      bottom: var(--spacing-4);
+      bottom: var(--spacing-8);
       right: var(--spacing-8);
 
       display: flex;
@@ -55,7 +55,7 @@
         transition: 0.3s ease-in-out;
 
         &:hover {
-          background: var(--colorPink);
+          background: var(--colorYellow);
         }
       }
 

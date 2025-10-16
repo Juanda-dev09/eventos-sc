@@ -9,7 +9,7 @@ export function HeroPage() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % data.length);
+      setActiveIndex((prev) => (prev + 1) % data.carousel.length);
     }, 15000);
     return () => clearInterval(interval);
   }, []);
@@ -26,7 +26,7 @@ export function HeroPage() {
         </nav>
 
         <section className="contentCarousel">
-          {data.map((evento, index) => (
+          {data.carousel.map((evento, index) => (
             <div
               key={evento.id}
               className={`carouselItem ${
@@ -35,7 +35,7 @@ export function HeroPage() {
             >
               <CarouselEventosSC
                 fecha={evento.fecha}
-                ciudad={evento.ciudad}
+                ciudad={evento.ubicacion}
                 titleEvent={evento.titulo}
                 descriptionEvent={evento.texto}
                 imageEvent={evento.img}
@@ -45,7 +45,7 @@ export function HeroPage() {
           ))}
 
           <div className="bx-controlsCarousel">
-            {data.map((_, index) => (
+            {data.carousel.map((_, index) => (
               <span
                 key={index}
                 className={`circleControlCarousel ${
