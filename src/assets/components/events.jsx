@@ -1,7 +1,11 @@
 import { CardsEvents } from "./cardsEvents";
 import "../CSS/events.css";
+import data from "../JSON/data.json";
 
 export function EventsPage() {
+  const destacados = data.eventos.filter((event) => event.destacado);
+  const proximos = data.eventos.filter((event) => !event.destacado);
+
   return (
     <>
       <article className="content__allEventsPage-eventosSC">
@@ -11,10 +15,22 @@ export function EventsPage() {
         </section>
 
         <figure className="content_eventsDestacados">
-          <CardsEvents />
-          <CardsEvents />
-          <CardsEvents />
-          <CardsEvents />
+          {destacados.map((event) => (
+            <div className="contentDestacados">
+              <CardsEvents
+                key={event.id}
+                categoryMain={event.categoriaPrincipal}
+                titleEvent={event.titulo}
+                descriptionEvent={event.texto}
+                locationEvent={event.ubicacion}
+                dateEvent={event.fecha}
+                tagsEvent={event.categoria}
+                imageEvent={event.img}
+                proximo={event.proximo}
+                destacado={event.destacado}
+              />
+            </div>
+          ))}
         </figure>
 
         <section className="introductionSection">
@@ -22,7 +38,24 @@ export function EventsPage() {
           <p className="txt">No te pierdas estas experiencias cercanas</p>
         </section>
 
-        <figure className="content_eventsProximos"></figure>
+        <figure className="content_eventsProximos">
+          {proximos.map((event) => (
+            <div className="contentProximos">
+              <CardsEvents
+                key={event.id}
+                categoryMain={event.categoriaPrincipal}
+                titleEvent={event.titulo}
+                descriptionEvent={event.texto}
+                locationEvent={event.ubicacion}
+                dateEvent={event.fecha}
+                tagsEvent={event.categoria}
+                imageEvent={event.img}
+                proximo={event.proximo}
+                destacado={event.destacado}
+              />
+            </div>
+          ))}
+        </figure>
       </article>
     </>
   );

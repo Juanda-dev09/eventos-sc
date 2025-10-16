@@ -25,5 +25,20 @@
     align-items: center;
     flex-wrap: wrap;
     gap: var(--spacing-6);
+
+    .contentDestacados {
+      width: 45%;
+    }
+  }
+
+  .content_eventsProximos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-6);
+
+    .contentProximos {
+      width: 25%;
+    }
   }
 }
